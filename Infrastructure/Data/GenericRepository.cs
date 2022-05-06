@@ -40,7 +40,25 @@ namespace Infrastructure.Data
 
         public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec)
         {
-            return await ApplySpecification(spec).ToListAsync();
+            var query = ApplySpecification(spec);
+
+            return await query.ToListAsync();
+        }
+
+        public void Add(T entity)
+        {
+            _context.Set<T>().Add(entity);
+        }
+
+         public void Delete(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+        }
+
+         public void Update(T entity)
+        {
+            _context.Set<T>().Attach(entity);
+            _context.Entry(entity).State = EntityState.Modified;
         }
 
         private IQueryable<T> ApplySpecification(ISpecification<T> spec)
