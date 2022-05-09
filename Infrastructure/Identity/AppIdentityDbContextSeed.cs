@@ -21,9 +21,9 @@ namespace Infrastructure.Identity
                         FirstName = "Bob",
                         LastName = "Bobbity",
                         Street = "10 The street",
-                        City = "New York",
-                        State = "NY",
-                        ZipCode = "90210"
+                        City = "Ilford",
+                        State = "United Kingdom",
+                        ZipCode = "IG2 5RG"
                     }
                 };
 

@@ -1,18 +1,18 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "Alloy Wheel"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Brake Discs"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "Bulb"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "Filter"
   }
 ]
